@@ -193,17 +193,66 @@ console.log(tatu);
 
 // o'rtacha havfsizlik
 
-class Fak extends University {
-  constructor(nomi, soni, sun) {
-    super(nomi, soni);
-    this.sun = sun;
+// class Fak extends University {
+//   constructor(nomi, soni, sun) {
+//     super(nomi, soni);
+//     this.sun = sun;
+//   }
+// }
+
+// const Ali = new Fak("s", "a", "b");
+// console.log(Ali);
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// for (let el of arr) {
+//   console.log(el);
+// }
+
+class Mashina {
+  constructor(name) {
+    this.name = name;
+  }
+
+  nomiOl() {
+    console.log(this.name);
+  }
+
+  nomiUzgartir(val) {
+    this.name = val;
+    // bitta kalit joyi bor bu joyda nexia obyektini qaytarishi kerak
+    return this;
+    // agar betda return ni yozsak undefined.name bo'lib qoladi
+    // this degani seni ichingda nima bo'lsa hammasini chiqar degani
   }
 }
 
-const Ali = new Fak("s", "a", "b");
-console.log(Ali);
+let nexia = new Mashina("nexia");
 
-let arr = [1, 2, 3, 4, 5, 6];
-for (let el of arr) {
-  console.log(el);
+console.log(nexia);
+
+nexia.nomiUzgartir("NEXIA 2").nomiOl();
+// bu funksiya ishlashi uchun undan oldingi funksiyaga manashu elementni yozib qo'yishimiz kk
+
+console.log(nexia);
+
+class Ali {
+  constructor(ism, name) {
+    this.ism = ism;
+    this.name = name;
+  }
+
+  nominiOl() {
+    console.log(this.ism);
+  }
+
+  karochi(val) {
+    this.nome = val;
+    return this;
+  }
 }
+
+let vali = new Ali("olma", "nok");
+console.log(vali);
+
+vali.karochi("sabzi").nominiOl();
+console.log(vali);
