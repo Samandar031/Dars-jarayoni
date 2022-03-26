@@ -202,3 +202,8 @@ class Fak extends University {
 
 const Ali = new Fak("s", "a", "b");
 console.log(Ali);
+
+let arr = [1, 2, 3, 4, 5, 6];
+for (let el of arr) {
+  console.log(el);
+}
