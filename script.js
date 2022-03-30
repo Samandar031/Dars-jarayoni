@@ -235,6 +235,24 @@ nexia.nomiUzgartir("NEXIA 2").nomiOl();
 
 console.log(nexia);
 
+// ////////////////////////////////////////////////////////
+
+// class Ali {
+//   constructor(ism, name) {
+//     this.ism = ism;
+//     this.name = name;
+//   }
+
+//   nominiOl() {
+//     console.log(this.ism);
+//   }
+
+//   karochi(val) {
+//     this.name = val;
+//     return this;
+//   }
+// }
+
 class Ali {
   constructor(ism, name) {
     this.ism = ism;
@@ -246,10 +264,11 @@ class Ali {
   }
 
   karochi(val) {
-    this.nome = val;
+    this.name = val;
     return this;
   }
 }
+
 
 let vali = new Ali("olma", "nok");
 console.log(vali);
